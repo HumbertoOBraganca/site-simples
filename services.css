@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #081b29;
+    color: #ededed;
+}
+
+.header {
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    position: relative;
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.logo::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+} 
+
+.navbar a:hover,
+.navbar a.active {
+    color:#00abf0
+
+}
+
+.home {
+    /*background: url('C:/Users/Win10/Desktop/Portfolio/Site Portfolio Simples/Character 4.png') no-repeat;
+    background-size: cover;
+    background-position: center;*/
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    align-items: center;
+    padding: 0 10%;
+    justify-content: space-around;
+}
+
+.front-end #image-icons {
+    background-color: transparent;
+}
+
+.front-end h1,
+.back-end h1,
+.front-end-framework h1 {
+    text-align: center;
+}
+
+.tec-logo {
+    display: flex;
+    justify-content: center; /* Center the elements horizontally */
+  }
+.tec-titles {
+    margin-bottom: 16px;
+}
+
+.servicos-box {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #081b29;
+    display: flex;
+    justify-content: space-around;
+    padding: 100px;
+}
+/*KEYFRAMES ANIMATION*/
+
+@media screen and (max-width: 700px) {
+    .servicos-box {
+        flex-direction: column;
+        align-items: center;
+    }
+    .tec-logo img {
+        width: 30%;
+        /* Adjust the percentage as needed for smaller screens */
+    }
+
+    .tec-logo {
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        /* Stack the logos vertically for smaller screens */
+    }
+    .image-icons{
+        margin: 50px;
+    }
+    .tec-titles{
+        margin-top: 50px;
+    }
+}
+
+
+@keyframes showRight {
+    100% {
+        width: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header {
+        padding: 30px 20px;
+    }
+}
