@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #081b29;
+    color: #ededed;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background: #081b29;
+}
+
+.logo {
+    position: relative;
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.logo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #00abf0
+}
+
+.tabela-completa{
+    display: flex;
+        justify-content: center;
+        /* Centraliza horizontalmente */
+        align-items: center;
+}
+
+.tableauPlaceholder {
+    max-width: 100%;
+    /* Define a largura máxima da div interna para 90% do viewport width */
+    max-height: 90vh;
+    /* Define a altura máxima da div interna para 90% do viewport height */
+    overflow: auto;
+    /* Adiciona scrollbars caso o conteúdo exceda a área visível */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-bottom: 0;
+    z-index: 0;
+}
+
+.apresentacao {
+        /* Largura desejada da div */
+        margin: 0 auto;
+        /* Define margens automáticas para centralizar horizontalmente */
+        background-color: #ccc;
+        /* Cor de fundo */
+        text-align: center;
+        /* Centraliza o texto */
+        margin: 20px auto 0;
+        margin-bottom: 5%;
+        background: #487e8625;
+        position: relative;
+        z-index: 3;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin-top: 60px;
+        width: 100%;
+        display: flex;
+            /* Utiliza flexbox */
+            justify-content: center;
+            /* Centraliza horizontalmente */
+            align-items: center;
+            /* Centraliza verticalmente */
+}
+.sub-container {
+    width: 1000px;
+    text-align: center;
+    margin: auto;
+    /* Centraliza a div filha */
+}
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    color: #00abf0;
+}
+
+.infos{
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+}
+
+
+
+@keyframes showRight {
+    100% {
+        width: 0;
+    }
+}
+
+#image-icons {
+    background-color: transparent;
+}
+
+@media screen and (max-width: 1900px) {
+    #personagem {
+        display: none;
+        /* Hide the image when the window width is 1920px or smaller */
+    }
+
+    @media screen and (max-width: 600px) {
+        .header {
+            padding: 30px 20px;
+        }
+    }
+
+}

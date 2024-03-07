@@ -158,7 +158,9 @@ body {
     z-index: 2;
 }
 
-
+.btn-box{
+    margin: auto;
+}
 .btn-box a {
     position: relative;
     display: inline-flex; 
